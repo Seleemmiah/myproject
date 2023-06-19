@@ -77,8 +77,11 @@ WSGI_APPLICATION = 'mypro.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mypro',
+        'USER': 'postgres',
+        'PASSWORD': 'evaporation',
+        'HOST': 'localhost'
     }
 }
 
